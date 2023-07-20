@@ -14,9 +14,22 @@
 </head>
 
 <body class="bg-gradient-to-r from-amber-50 to-white font-roboto">
-  <header class="w-full h-24 flex px-20 py-6 text-amber-900 font-roboto justify-between items-center self-stretch">
+  <header
+    class="w-full h-24 flex px-10 lg:px-20 py-3 lg:py-6 text-amber-900 font-roboto justify-between items-center self-stretch">
     <h2 class="text-2xl font-bold leading-110">Coller</h2>
-    <nav class="flex items-center gap-4 text-base font-medium tracking-tighter not-italic">
+    <div class="block sm:hidden">
+      <div class="space-y-1 cursor-pointer">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+
+        </div>
+      </div>
+
+    </div>
+    <nav class="hidden sm:flex items-center gap-4 text-base font-medium tracking-tighter not-italic">
       <a href="#">Products</a>
       <a href="#">Solutions</a>
       <a href="#">Pricing</a>
@@ -25,72 +38,67 @@
       <button class="rounded-lg border-amber-900 border-2 p-3">Sign Up now</button>
     </nav>
   </header>
-  <section class="flex p-20 items-center gap-20 self-stretch">
-    <div>
-      <h1 class="text-slate-900 font-roboto text-6xl font-extrabold leading-relaxed">Collectible Sneakers</h1>
-      <p class="flex flex-col items-start gap-8 self-stretch">
-        Sit elit feugiat turpis sed integer integer accumsan turpis. Sed suspendisse nec lorem mauris. Pharetra, eu
-        imperdiet ipsum ultrices amet.
-      </p>
-      <button class="rounded-lg inline-flex p-1 justify-center items-center border-amber-900 border-2 ">Sign up
-        now</button>
-      <button class="inline-flex justify-center items-center rounded-lg px-3 py-2"><svg
-          xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-          <path
-            d="M12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22ZM12 20C14.1217 20 16.1566 19.1571 17.6569 17.6569C19.1571 16.1566 20 14.1217 20 12C20 9.87827 19.1571 7.84344 17.6569 6.34315C16.1566 4.84285 14.1217 4 12 4C9.87827 4 7.84344 4.84285 6.34315 6.34315C4.84285 7.84344 4 9.87827 4 12C4 14.1217 4.84285 16.1566 6.34315 17.6569C7.84344 19.1571 9.87827 20 12 20ZM16.126 13.746L12.071 16.644C11.166 17.29 9.941 17.033 9.334 16.068C9.11494 15.7171 8.99918 15.3116 9 14.898V9.102C9 7.942 9.883 7 10.972 7C11.363 7 11.746 7.124 12.071 7.356L16.126 10.254C17.031 10.901 17.272 12.206 16.666 13.171C16.5251 13.3959 16.3417 13.5913 16.126 13.746ZM10.972 9.102V14.898L15.027 12L10.972 9.102Z"
-            fill="#78350F" />
-        </svg>
-        Watch Demo</button>
-    </div>
-    <div>
-      <img src="images/Col.png" class="w-486 h-388">
+  <section class="flex p-20 md:items-center gap-20 self-stretch">
+    <div class="md:flex md:items-center md:justify-between">
+      <div class="md:w-1/2 md:pr-8">
+        <h1 class="text-slate-900 font-roboto text-4xl md:text-6xl font-extrabold leading-relaxed">Collectible Sneakers
+        </h1>
+        <p class="mt-4 md:mt-8 text-base md:text-lg text-gray-600">Sit elit feugiat turpis sed integer integer accumsan
+          turpis. Sed suspendisse nec lorem mauris. Pharetra, eu imperdiet ipsum ultrices amet.</p>
+        <div class="flex flex-row items-start gap-4 mt-6 md:mt-8">
+          <button
+            class="rounded-lg inline-flex p-2 justify-center items-center border-amber-900 border-2 whitespace-nowrap">Sign
+            up now</button>
+          <button class="inline-flex justify-center items-center rounded-lg px-3 py-2 whitespace-nowrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22ZM12 20C14.1217 20 16.1566 19.1571 17.6569 17.6569C19.1571 16.1566 20 14.1217 20 12C20 9.87827 19.1571 7.84344 17.6569 6.34315C16.1566 4.84285 14.1217 4 12 4C9.87827 4 7.84344 4.84285 6.34315 6.34315C4.84285 7.84344 4 9.87827 4 12C4 14.1217 4.84285 16.1566 6.34315 17.6569C7.84344 19.1571 9.87827 20 12 20ZM16.126 13.746L12.071 16.644C11.166 17.29 9.941 17.033 9.334 16.068C9.11494 15.7171 8.99918 15.3116 9 14.898V9.102C9 7.942 9.883 7 10.972 7C11.363 7 11.746 7.124 12.071 7.356L16.126 10.254C17.031 10.901 17.272 12.206 16.666 13.171C16.5251 13.3959 16.3417 13.5913 16.126 13.746ZM10.972 9.102V14.898L15.027 12L10.972 9.102Z"
+                fill="#78350F" />
+            </svg>
+            Watch Demo
+          </button>
+        </div>
+      </div>
+      <div class="md:w-1/3 mt-8 md:mt-0">
+        <img src="images/Col.png" class="w-full h-auto">
+      </div>
     </div>
 
-    <div>
 
-    </div>
+
   </section>
-  <section class="flex justify-center items-center self-stretch p-20 gap-20">
-    <div class="flex w-96 flex-col items-start">
-      <img src="images/Group.png">
+  <section class="flex flex-col md:flex-row justify-center items-center md:self-stretch p-5 md:p-20 gap-5 md:gap-20">
+    <div class="flex flex-col items-center md:items-start">
+      <img src="images/Group.png" class="w-auto h-auto">
       <div class="font-medium text-gray-900">Nibh viverra</div>
       <p>Sit bibendum donec dolor fames neque vulputate non sit aliquam. Consequat turpis natoque leo, massa. </p>
     </div>
-    <div class="w-96 flex-col items-start">
-      <img src="images/Group 53.png">
+    <div class="flex flex-col items-center md:items-start">
+      <img src="images/Group 53.png" class="w-auto h-auto">
       <div class="font-medium text-gray-900">Cursus amet</div>
       <p>Sit bibendum donec dolor fames neque vulputate non sit aliquam. Consequat turpis natoque leo, massa. </p>
     </div>
-    <div class="w-96 flex-col items-start">
-      <img src="images/Group 48.png">
+    <div class="flex flex-col items-center md:items-start">
+      <img src="images/Group 48.png" class="w-auto h-auto">
       <div class="font-medium text-gray-900">Ipsum fermentum</div>
       <p>Sit bibendum donec dolor fames neque vulputate non sit aliquam. Consequat turpis natoque leo, massa. </p>
     </div>
   </section>
 
-  <section class="w-full h-776 items-center bg-gray-900">
-    <div class="flex justify-between items-center px-20">
-      <h2 class="flex items-start p-20 pl-2 flex-col self-stretch text-6xl not-italic font-extrabold text-white gap-8">
+
+
+  <section class="w-full h-1643 sm:h-776 items-center bg-gray-900">
+    <!-- <img src="images/Backlights.png" alt=""> -->
+    <div class="flex flex-col md:flex-row justify-between items-center px-5 md:px-20">
+      <h2
+        class="flex items-start p-10 md:p-20 pl-2 flex-col self-stretch text-3xl md:text-6xl not-italic font-extrabold text-white gap-6 md:gap-8">
         The best of the best</h2>
-      <button class="p-3 rounded-lg border-white border-2 text-white">Sign Up now</button>
+      <button class="p-3 rounded-lg border-white border-2 text-white whitespace-nowrap ">Sign Up now</button>
     </div>
-    <div class="flex justify-center items-center self-stretch p-20 gap-12">
-      <div class="rounded-lg border-gray-900 border">
-        <img class="flex h-56 justify-center items-center gap-2.5 self-stretch " src="images/Picture.png">
-        <div class="text-white text-2xl not-italic font-bold pt-8 pr-8 pb-0 pl-0">Title</div>
-        <p class="text-white text-lg not-italic font-normal leading-7 ">Egestas elit dui scelerisque ut eu purus aliquam
-          vitae habitasse.</p>
-        <button class="text-white rounded-lg border-white border-2 p-3 w-full h-14 flex justify-center items-center">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
-            <path
-              d="M10.3333 20C9.80287 20 9.29417 19.7893 8.91909 19.4142C8.54402 19.0391 8.33331 18.5304 8.33331 18C8.33331 17.4696 8.54402 16.9609 8.91909 16.5858C9.29417 16.2107 9.80287 16 10.3333 16C10.8637 16 11.3724 16.2107 11.7475 16.5858C12.1226 16.9609 12.3333 17.4696 12.3333 18C12.3333 18.5304 12.1226 19.0391 11.7475 19.4142C11.3724 19.7893 10.8637 20 10.3333 20ZM17.3333 20C16.8029 20 16.2942 19.7893 15.9191 19.4142C15.544 19.0391 15.3333 18.5304 15.3333 18C15.3333 17.4696 15.544 16.9609 15.9191 16.5858C16.2942 16.2107 16.8029 16 17.3333 16C17.8637 16 18.3724 16.2107 18.7475 16.5858C19.1226 16.9609 19.3333 17.4696 19.3333 18C19.3333 18.5304 19.1226 19.0391 18.7475 19.4142C18.3724 19.7893 17.8637 20 17.3333 20ZM4.29531 5.923C4.04567 5.91495 3.80895 5.81012 3.6352 5.63068C3.46146 5.45125 3.36432 5.21127 3.36432 4.9615C3.36432 4.71173 3.46146 4.47175 3.6352 4.29232C3.80895 4.11288 4.04567 4.00805 4.29531 4H5.44631C6.34831 4 7.12831 4.626 7.32431 5.506L8.57731 11.148C8.77331 12.028 9.55331 12.654 10.4553 12.654H17.9673L19.4093 6.884H10.0643C9.81702 6.87272 9.5836 6.76654 9.41259 6.58755C9.24159 6.40857 9.14616 6.17055 9.14616 5.923C9.14616 5.67545 9.24159 5.43743 9.41259 5.25845C9.5836 5.07946 9.81702 4.97328 10.0643 4.962H19.4093C19.7016 4.96191 19.9901 5.02848 20.2529 5.15663C20.5156 5.28479 20.7457 5.47116 20.9256 5.70158C21.1055 5.93201 21.2305 6.20041 21.2911 6.4864C21.3517 6.77238 21.3463 7.06842 21.2753 7.352L19.8333 13.12C19.7294 13.5362 19.4892 13.9057 19.1511 14.1697C18.813 14.4337 18.3963 14.5771 17.9673 14.577H10.4553C9.5801 14.5771 8.73103 14.2787 8.04832 13.7311C7.36561 13.1835 6.89009 12.4194 6.70031 11.565L5.44631 5.923H4.29531Z"
-              fill="white" />
-          </svg>
-          Buy Now
-        </button>
-      </div>
-      <div class="border rounded-lg  border-gray-900">
-        <img class="flex h-56 justify-center items-center gap-2.5 self-stretch " src="images/Picture (1).png">
+
+    <div class="flex flex-col md:flex-row justify-center items-center self-stretch p-10 md:p-20 gap-12">
+      <div class="flex flex-col items-center md:w-96 rounded-lg border-gray-900 border">
+        <img class="h-56 justify-center items-center gap-2.5 self-stretch" src="images/Picture.png">
         <div class="text-white text-2xl not-italic font-bold pt-8 pr-8 pb-0 pl-0">Title</div>
         <p class="text-white text-lg not-italic font-normal leading-7">Egestas elit dui scelerisque ut eu purus aliquam
           vitae habitasse.</p>
@@ -103,8 +111,8 @@
           Buy Now
         </button>
       </div>
-      <div class=" border-gray-900 border rounded-lg">
-        <img class="flex h-56 justify-center items-center gap-2.5 self-stretch" src="images/Picture (2).png">
+      <div class="flex flex-col items-center md:w-96 border rounded-lg border-gray-900">
+        <img class="h-56 justify-center items-center gap-2.5 self-stretch" src="images/Picture (1).png">
         <div class="text-white text-2xl not-italic font-bold pt-8 pr-8 pb-0 pl-0">Title</div>
         <p class="text-white text-lg not-italic font-normal leading-7">Egestas elit dui scelerisque ut eu purus aliquam
           vitae habitasse.</p>
@@ -117,31 +125,44 @@
           Buy Now
         </button>
       </div>
+      <div class="flex flex-col items-center md:w-96 border rounded-lg border-gray-900">
+        <img class="h-56 justify-center items-center gap-2.5 self-stretch" src="images/Picture (2).png">
+        <div class="text-white text-2xl not-italic font-bold pt-8 pr-8 pb-0 pl-0">Title</div>
+        <p class="text-white text-lg not-italic font-normal leading-7">Egestas elit dui scelerisque ut eu purus aliquam
+          vitae habitasse.</p>
+        <button class="text-white rounded-lg border-white border-2 p-3 w-full h-14 flex justify-center items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+            <path
+              d="M10.3333 20C9.80287 20 9.29417 19.7893 8.91909 19.4142C8.54402 19.0391 8.33331 18.5304 8.33331 18C8.33331 17.4696 8.54402 16.9609 8.91909 16.5858C9.29417 16.2107 9.80287 16 10.3333 16C10.8637 16 11.3724 16.2107 11.7475 16.5858C12.1226 16.9609 12.3333 17.4696 12.3333 18C12.3333 18.5304 12.1226 19.0391 11.7475 19.4142C11.3724 19.7893 10.8637 20 10.3333 20ZM17.3333 20C16.8029 20 16.2942 19.7893 15.9191 19.4142C15.544 19.0391 15.3333 18.5304 15.3333 18C15.3333 17.4696 15.544 16.9609 15.9191 16.5858C16.2942 16.2107 16.8029 16 17.3333 16C17.8637 16 18.3724 16.2107 18.7475 16.5858C19.1226 16.9609 19.3333 17.4696 19.3333 18C19.3333 18.5304 19.1226 19.0391 18.7475 19.4142C18.3724 19.7893 17.8637 20 17.3333 20ZM4.29531 5.923C4.04567 5.91495 3.80895 5.81012 3.6352 5.63068C3.46146 5.45125 3.36432 5.21127 3.36432 4.9615C3.36432 4.71173 3.46146 4.47175 3.6352 4.29232C3.80895 4.11288 4.04567 4.00805 4.29531 4H5.44631C6.34831 4 7.12831 4.626 7.32431 5.506L8.57731 11.148C8.77331 12.028 9.55331 12.654 10.4553 12.654H17.9673L19.4093 6.884H10.0643C9.81702 6.87272 9.5836 6.76654 9.41259 6.58755C9.24159 6.40857 9.14616 6.17055 9.14616 5.923C9.14616 5.67545 9.24159 5.43743 9.41259 5.25845C9.5836 5.07946 9.81702 4.97328 10.0643 4.962H19.4093C19.7016 4.96191 19.9901 5.02848 20.2529 5.15663C20.5156 5.28479 20.7457 5.47116 20.9256 5.70158C21.1055 5.93201 21.2305 6.20041 21.2911 6.4864C21.3517 6.77238 21.3463 7.06842 21.2753 7.352L19.8333 13.12C19.7294 13.5362 19.4892 13.9057 19.1511 14.1697C18.813 14.4337 18.3963 14.5771 17.9673 14.577H10.4553C9.5801 14.5771 8.73103 14.2787 8.04832 13.7311C7.36561 13.1835 6.89009 12.4194 6.70031 11.565L5.44631 5.923H4.29531Z"
+              fill="white" />
+          </svg>
+          Buy Now
+        </button>
+      </div>
+    </div>
+
   </section>
-  <section class="w-full h-816 px-20 py-40 bg-gradient-to-r from-amber-50 to-white">
-    <div class="flex h-496 p-20 items-center gap-20 self-stretch rounded-3xl bg-white shodow-sm ">
-      <div class="flex flex-col">
-        <h3 class="text-6xl not-italic font-extrabold leading-24 text-gray-900 self-stretch gap-6">Why join us</h3>
-        <ul class="">
+  <section class="w-full px-10 py-20 md:px-20 md:py-40 bg-gradient-to-r from-amber-50 to-white">
+    <div class="flex flex-col md:flex-row h-auto md:h-496 p-10 md:p-20 items-center gap-10 md:gap-20 self-stretch rounded-3xl bg-white shadow-sm">
+      <div class="flex flex-col flex-1">
+        <h3 class="text-2xl md:text-6xl font-extrabold leading-10 md:leading-24 text-gray-900 self-stretch gap-2">Why join us</h3>
+        <ul class="text-base md:text-lg">
           <li class="flex items-center p-1">
-            <svg class="w-6 h-6 mr2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-              fill="none">
+            <svg class="w-6 h-6 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path
                 d="M10.486 16.7299C10.3547 16.7302 10.2247 16.7045 10.1034 16.6544C9.98204 16.6043 9.87181 16.5307 9.77899 16.4379L5.53699 12.1949C5.44141 12.1027 5.36516 11.9924 5.31266 11.8705C5.26017 11.7485 5.23249 11.6173 5.23125 11.4845C5.23 11.3517 5.25521 11.22 5.3054 11.0971C5.3556 10.9742 5.42977 10.8625 5.52359 10.7685C5.61742 10.6746 5.72902 10.6002 5.85188 10.5499C5.97474 10.4995 6.1064 10.4741 6.23918 10.4752C6.37196 10.4762 6.50319 10.5037 6.62523 10.556C6.74727 10.6083 6.85767 10.6845 6.94999 10.7799L10.485 14.3149L16.85 7.95189C17.0375 7.76425 17.2919 7.65879 17.5571 7.65869C17.8224 7.6586 18.0768 7.76389 18.2645 7.95139C18.4521 8.1389 18.5576 8.39327 18.5577 8.65854C18.5578 8.92381 18.4525 9.17825 18.265 9.36589L11.193 16.4379C11.1002 16.5307 10.9899 16.6043 10.8686 16.6544C10.7473 16.7045 10.6173 16.7302 10.486 16.7299Z"
                 fill="#15803D" />
             </svg>Est et in pharetra magna adipiscing ornare aliquam.
           </li>
           <li class="flex items-center p-1">
-            <svg class="w-6 h-6 mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-              fill="none">
+            <svg class="w-6 h-6 " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path
                 d="M10.486 16.7299C10.3547 16.7302 10.2247 16.7045 10.1034 16.6544C9.98204 16.6043 9.87181 16.5307 9.77899 16.4379L5.53699 12.1949C5.44141 12.1027 5.36516 11.9924 5.31266 11.8705C5.26017 11.7485 5.23249 11.6173 5.23125 11.4845C5.23 11.3517 5.25521 11.22 5.3054 11.0971C5.3556 10.9742 5.42977 10.8625 5.52359 10.7685C5.61742 10.6746 5.72902 10.6002 5.85188 10.5499C5.97474 10.4995 6.1064 10.4741 6.23918 10.4752C6.37196 10.4762 6.50319 10.5037 6.62523 10.556C6.74727 10.6083 6.85767 10.6845 6.94999 10.7799L10.485 14.3149L16.85 7.95189C17.0375 7.76425 17.2919 7.65879 17.5571 7.65869C17.8224 7.6586 18.0768 7.76389 18.2645 7.95139C18.4521 8.1389 18.5576 8.39327 18.5577 8.65854C18.5578 8.92381 18.4525 9.17825 18.265 9.36589L11.193 16.4379C11.1002 16.5307 10.9899 16.6043 10.8686 16.6544C10.7473 16.7045 10.6173 16.7302 10.486 16.7299Z"
                 fill="#15803D" />
             </svg>Tellus arcu sed consequat ac velit ut eu blandit.
           </li>
           <li class="flex items-center p-1">
-            <svg class="w-6 h-6 mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-              fill="none">
+            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path
                 d="M10.486 16.7299C10.3547 16.7302 10.2247 16.7045 10.1034 16.6544C9.98204 16.6043 9.87181 16.5307 9.77899 16.4379L5.53699 12.1949C5.44141 12.1027 5.36516 11.9924 5.31266 11.8705C5.26017 11.7485 5.23249 11.6173 5.23125 11.4845C5.23 11.3517 5.25521 11.22 5.3054 11.0971C5.3556 10.9742 5.42977 10.8625 5.52359 10.7685C5.61742 10.6746 5.72902 10.6002 5.85188 10.5499C5.97474 10.4995 6.1064 10.4741 6.23918 10.4752C6.37196 10.4762 6.50319 10.5037 6.62523 10.556C6.74727 10.6083 6.85767 10.6845 6.94999 10.7799L10.485 14.3149L16.85 7.95189C17.0375 7.76425 17.2919 7.65879 17.5571 7.65869C17.8224 7.6586 18.0768 7.76389 18.2645 7.95139C18.4521 8.1389 18.5576 8.39327 18.5577 8.65854C18.5578 8.92381 18.4525 9.17825 18.265 9.36589L11.193 16.4379C11.1002 16.5307 10.9899 16.6043 10.8686 16.6544C10.7473 16.7045 10.6173 16.7302 10.486 16.7299Z"
                 fill="#15803D" />
@@ -149,99 +170,100 @@
           </li>
         </ul>
         <button class="rounded-lg border-amber-900 border-2 p-3 w-36">Sign Up now</button>
-
       </div>
-      <!-- <div class="relative w-666.284px h-217.934px shrink-0 origin-center -rotate-45 bg-amber-200 "> 
-       <div class="absolute items-end w-52 h-52 shrink-0 rounded-large bg-pink-700 opacity-75"> 
-     </div> -->
       <div>
-        <img class="flex flex-col items-center rounded-3xl w-520 h-350" src="images/Desktop.png">
+        <img class="w-60 h-40 md:w-520 md:h-350" src="images/Desktop.png">
       </div>
+      
     </div>
   </section>
-  <section
-    class="flex p-20 flex-col justify-between items-center gap-20 self-stretch bg-gradient-to-r from-amber-50 to-white">
+  
+  <section class="flex flex-col gap-12 self-stretch bg-gradient-to-r from-amber-50 to-white">
     <!-- <div class="w-1360 h-421 absolute left-10 bottom-32 bg-amber-200"> </div> -->
-    <div class="">
-      <h3 class="flex items-start gap-8 text-6xl font-extrabold leading-10">Because they love us</h3>
+    <div class="px-4 w-full flex gap-6">
+      <h3 class="text-3xl md:text-6xl flex-1 font-extrabold w-full">
+        Because they love us
+      </h3>
+      <div class="hidden md:flex justify-end gap-2 px-4">
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
+          </svg>
+        </button>
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+          </svg>
+        </button>
+      </div>
     </div>
-    <div class="">
-      <button><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-          stroke="currentColor" class="w-6 h-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
-        </svg>
-      </button>
-      <button><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-          stroke="currentColor" class="w-6 h-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-        </svg>
-      </button>
-    </div>
-    <div class="flex justify-center items-center gap-4 snap-x snap-mandatory">
-      <div
-        class="flex p-8 flex-col items-start gap-4 self-stretch bg-white w-96 h-421 border rounded-md snap-always snap-center">
+
+    <div
+      class="flex no-scrollbar px-4 scroll-mx-4 [&_*]:shrink-0  max-w-full overflow-x-auto  gap-4 snap-x snap-mandatory">
+      <div class="flex p-8 flex-col items-start gap-4 self-stretch bg-white w-271 h-248 md:w-96 md:h-421 border rounded-md snap-always snap-center">
         <div class="flex justify-center items-center flex-row">
-          <img src="images/Vector (1).png">
-          <h2 class="flex items-center gap-2 p-2">Kontrastr</h2>
+          <img class="w-3 h-3 md:w-6 md:h-6" src="images/Vector (1).png">
+          <h2 class="flex items-center md:gap-0 md:p-2">Kontrastr</h2>
         </div>
         <div class="">
-          <p class="text-2xl not-italic font-normal leading-10">Amet morbi enim sodales quis dui, in habitant pharetra.
+          <p class="md:text-2xl not-italic font-normal leading-4 md:leading-10">Amet morbi enim sodales quis dui, in habitant pharetra.
             Risus id fringilla sed adipiscing volutpat sit varius turpis. Sed pretium se.</p>
           <div class="flex items-center mt-4">
-            <img class="rounded-2large w-16 h-16 justify-center items-center gap-2.5" src="images/User Thumb (3).png">
+            <img class="rounded-2large w-8 h-8 md:w-16 md:h-16 justify-center items-center gap-2.5" src="images/User Thumb (3).png">
             <div>
-              <h3 class="text-black text-xl not-italic font-normal">Ralph Edwards</h3>
+              <h3 class="text-black md:text-xl not-italic font-normal">Ralph Edwards</h3>
               <p class="text-gray-600 text-base font-normal not-italic ">Product Designer</p>
             </div>
           </div>
         </div>
       </div>
-      <div
-        class="flex p-8 flex-col items-start gap-4 self-stretch bg-white w-96 h-421 border rounded-md snap-always snap-center">
+      <div class="flex p-8 flex-col items-start gap-4 self-stretch bg-white w-271 h-248 md:w-96 md:h-421 border rounded-md snap-always snap-center">
         <div class="flex justify-center items-center flex-row">
-          <svg class="flex items-center gap-2" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+          <svg class="flex items-center gap-2 w-3 h-3 md:w-6 md:h-6" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
             viewBox="0 0 32 32" fill="none">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16345 24.8366 0 16 0C7.16343 0 0 7.16345 0 16C0 24.8366 7.16343 32 16 32ZM20.9915 7.45348C21.2344 6.59044 20.3969 6.08011 19.632 6.62504L8.9545 14.2317C8.12498 14.8226 8.25546 16 9.1505 16H11.9622V15.9782H17.442L12.977 17.5537L11.0086 24.5466C10.7656 25.4096 11.6031 25.9199 12.368 25.375L23.0455 17.7684C23.8751 17.1774 23.7445 16 22.8496 16H18.5857L20.9915 7.45348Z"
               fill="#475569" />
           </svg>
-          <h2 class="flex items-center gap-2 p-2">Zomer</h2>
+          <h2 class="flex items-center  md:gap-0 md:p-2">Zomer</h2>
         </div>
         <div class="">
-          <p class="text-2xl not-italic font-normal leading-10">Non risus viverra enim, quis. Eget vitae arcu vivamus
+          <p class="md:text-2xl not-italic font-normal leading-4 md:leading-10">Non risus viverra enim, quis. Eget vitae arcu vivamus
             sit
             tellus, viverra turpis lorem. Varius a turpis urna id porttitor.</p>
           <div class="flex items-center mt-4">
-            <img class="rounded-2large w-16 h-16 justify-center items-center gap-2.5" src="images/User Thumb.png">
+            <img class="rounded-2large w-8 h-8 md:w-16 md:h-16 justify-center items-center gap-2.5" src="images/User Thumb.png">
             <div>
-              <h3 class="text-black text-xl not-italic font-normal">Hellen Jummy</h3>
+              <h3 class="text-black md:text-xl not-italic font-normal">Hellen Jummy</h3>
               <p class="text-gray-600 text-base font-normal not-italic ">Team Lead</p>
             </div>
           </div>
         </div>
       </div>
       <div
-        class="flex p-8 flex-col items-start gap-4 self-stretch bg-white w-96 h-421 border rounded-md snap-always snap-center">
+        class="flex p-8 flex-col items-start gap-4 self-stretch bg-white  w-271 h-248 md:w-96 md:h-421 border rounded-md snap-always snap-center">
         <div class="flex justify-center items-center flex-row">
-          <img src="images/Vector (1).png">
-          <h2 class="flex items-center gap-2 p-2">SHELLS</h2>
+          <img class="w-3 h-3 md:w-6 md:h-6" src="images/Vector (1).png">
+          <h2 class="flex items-center  md:gap-0 md:p-2">SHELLS</h2>
         </div>
         <div class="">
-          <p class="text-2xl not-italic font-normal leading-10">Aliquet ridiculus mi porta habitant vulputate rhoncus,
+          <p class="md:text-2xl not-italic font-normal leading-4 md:leading-10">Aliquet ridiculus mi porta habitant vulputate rhoncus,
             mattis amet enim. Sit purus venenatis velit semper lectus sed ornare quam nulla.</p>
           <div class="flex items-center mt-4">
-            <img class="rounded-2large w-16 h-16 justify-center items-center gap-2.5" src="images/User Thumb (1).png">
+            <img class="rounded-2large w-8 h-8 md:w-16 md:h-16 justify-center items-center gap-2.5" src="images/User Thumb (1).png">
             <div>
-              <h3 class="text-black text-xl not-italic font-normal">Hellena John</h3>
+              <h3 class="text-black md:text-xl not-italic font-normal">Hellena John</h3>
               <p class="text-gray-600 text-base font-normal not-italic ">Co-founder</p>
             </div>
           </div>
         </div>
       </div>
       <div
-        class="flex p-8 flex-col items-start gap-4 self-stretch bg-white w-96 h-421 border rounded-md snap-always snap-center">
+        class="flex p-8 flex-col items-start gap-4 self-stretch bg-white w-271 h-248 md:w-96 md:h-421 border rounded-md snap-always snap-center">
         <div class="flex justify-center items-center flex-row">
-          <svg class="flex items-center gap-2" xmlns="http://www.w3.org/2000/svg" width="56" height="32"
+          <svg class="flex items-center gap-2 w-3 h-3 md:w-6 md:h-6" xmlns="http://www.w3.org/2000/svg" width="56" height="32"
             viewBox="0 0 56 32" fill="none">
             <path d="M37.4078 32H50.3256L18.3257 0H5.40784L37.4078 32Z" fill="#475569" />
             <path d="M24.9622 1.63716e-06L55.8096 30.8474V0H47.4617V9.73909L37.7225 0L24.9622 1.63716e-06Z"
@@ -249,33 +271,33 @@
             <path d="M0 1.07129V31.9999H8.34782V22.2607L18.0869 31.9999H30.9287L0 1.07129Z" fill="#475569" />
           </svg>
 
-          <h2 class="flex items-center gap-2 p-2">ArtVenue</h2>
+          <h2 class="flex items-center md:gap-2 md:p-2">ArtVenue</h2>
         </div>
         <div class="">
-          <p class="text-2xl not-italic font-normal leading-10">A eget sed posuere dui risus habitasse mauris. Venenatis
+          <p class="md:text-2xl not-italic font-normal leading-4 md:leading-10">A eget sed posuere dui risus habitasse mauris. Venenatis
             aliquet id ultrices a lacus. Pretium vehicula pretium posuere justo sed.</p>
           <div class="flex items-center mt-4">
-            <img class="rounded-2large w-16 h-16 justify-center items-center gap-2.5" src="images/User Thumb (2).png">
+            <img class="rounded-2large w-8 h-8 md:w-16 md:h-16 justify-center items-center gap-2.5" src="images/User Thumb (2).png">
             <div>
-              <h3 class="text-black text-xl not-italic font-normal">David Oshodi</h3>
+              <h3 class="text-black md:text-xl not-italic font-normal">David Oshodi</h3>
               <p class="text-gray-600 text-base font-normal not-italic ">Manager</p>
             </div>
           </div>
         </div>
       </div>
       <div
-        class="flex p-8 flex-col items-start gap-4 self-stretch bg-white w-96 h-421 border rounded-md snap-always snap-center">
+        class="flex p-8 flex-col items-start gap-4 self-stretch bg-white w-271 h-248 md:w-96 md:h-421 border rounded-md snap-always snap-center">
         <div class="flex justify-center items-center flex-row">
-          <img src="images/Vector (2).png">
-          <h2 class="flex items-center gap-2 p-2">WAVES</h2>
+          <img class="w-3 h-3 md:w-6 md:h-6" src="images/Vector (2).png">
+          <h2 class="flex items-center md:gap-2 md:p-2">WAVES</h2>
         </div>
         <div class="">
-          <p class="text-2xl not-italic font-normal leading-10">Magna egestas aliquet ut integer non. Sed diam enim nibh
+          <p class="md:text-2xl not-italic font-normal leading-4 md:leading-10">Magna egestas aliquet ut integer non. Sed diam enim nibh
             sit. Aliquam laoreet aenean metus nibh eu scelerisque.</p>
           <div class="flex items-center mt-4">
-            <img class="rounded-2large w-16 h-16 justify-center items-center gap-2.5" src="images/User Thumb (3).png">
+            <img class="rounded-2large w-8 h-8 md:w-16 md:h-16 justify-center items-center gap-2.5" src="images/User Thumb (3).png">
             <div>
-              <h3 class="text-black text-xl not-italic font-normal">Jane Doe</h3>
+              <h3 class="text-black md:text-xl not-italic font-normal">Jane Doe</h3>
               <p class="text-gray-600 text-base font-normal not-italic ">Senior Designer</p>
             </div>
           </div>
@@ -284,143 +306,173 @@
     </div>
   </section>
 
-  <section
-    class="bg-gradient-to-r from-amber-50 to-white w-full h-996 flex flex-col justify-center items-start gap-20 self-stretch pt-20 pb-32 pl-20 pr-20">
-    <div class="flex flex-col items-start gap-8 self-stretch">
-      <h3 class="font-roboto text-6xl font-extrabold leading-10 text-gray-900">
+  <section class="bg-gradient-to-r from-amber-50 to-white w-full h-auto md:h-996 flex flex-col justify-center items-center md:items-start gap-20 self-stretch pt-20 pb-32 pl-20 pr-20">
+    <div class="flex flex-col items-center md:items-start gap-8 self-stretch">
+      <h3 class="font-roboto text-3xl md:text-6xl font-extrabold leading-10 text-gray-900 text-center whitespace-nowrap">
         Grow your collection
       </h3>
-      <p class="self-stretch text-base font-normal leading-7 text-gray-900 not-italic">Enim neque massa porta adipiscing
-        elit. Sem libero id faucibus nibh amet dictum pellentesque sed. Eu non turpis risus odio sapien, fames sit
-        rhoncus.
-        Nec magna sed interdum sit purus tellus. Et volutpat proin neque placerat at bibendum quam tellus.</p>
+      <p class="self-stretch text-base font-normal leading-7 text-gray-900 not-italic">Enim neque massa porta adipiscing elit. Sem libero id faucibus nibh amet dictum pellentesque sed. Eu non turpis risus odio sapien, fames sit rhoncus. Nec magna sed interdum sit purus tellus. Et volutpat proin neque placerat at bibendum quam tellus.</p>
     </div>
-    <div class="flex items-start gap-20 self-stretch">
-      <div class="flex-col flex w-64 items-start gap-4">
-        <button class="flex p-4 justify-around items-center self-stretch bg-white rounded-lg"><svg
-            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+    <div class="flex flex-col md:flex-row items-center md:items-start gap-20 self-stretch no-scrollbar overflow-x-auto md:overflow-x-hidden">
+      <div class="flex flex-row md:flex-col w-full md:w-64 items-center md:items-start gap-4">
+        <button class="flex p-4 justify-around items-center bg-white rounded-lg whitespace-nowrap">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
           </svg>
-          Bibendum tellus <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="currentColor" class="w-6 h-6">
+          Bibendum tellus 
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
           </svg>
         </button>
-        <button class="flex p-4 items-center self-stretch gap-4"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
-            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
-          </svg>
-          Cras eget</button>
-        <button class="flex p-4 items-center self-stretch gap-4"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
-            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
-          </svg>
-          Dolor pharetra</button>
-        <button class="flex p-4 items-center self-stretch gap-4"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
-            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z" />
-          </svg>
-          Amet, fringilla</button>
-        <button class="flex p-4 items-center self-stretch gap-4"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
-            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z" />
-          </svg>
-          Amet nibh</button>
-        <button class="flex p-4 items-center self-stretch gap-4"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
-            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M6 13.5V3.75m0 9.75a1.5 1.5 0 010 3m0-3a1.5 1.5 0 000 3m0 3.75V16.5m12-3V3.75m0 9.75a1.5 1.5 0 010 3m0-3a1.5 1.5 0 000 3m0 3.75V16.5m-6-9V3.75m0 3.75a1.5 1.5 0 010 3m0-3a1.5 1.5 0 000 3m0 9.75V10.5" />
-          </svg>
-          Sed velit</button>
+        <button class="flex p-4 items-center self-stretch gap-4 whitespace-nowrap"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+          viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+        </svg>
+        Cras eget</button>
+      <button class="flex p-4 items-center self-stretch gap-4 whitespace-nowrap"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+          viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+        </svg>
+        Dolor pharetra</button>
+      <button class="flex p-4 items-center self-stretch gap-4 whitespace-nowrap"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+          viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z" />
+        </svg>
+        Amet, fringilla</button>
+      <button class="flex p-4 items-center self-stretch gap-4 whitespace-nowrap"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+          viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z" />
+        </svg>
+        Amet nibh</button>
+      <button class="flex p-4 items-center self-stretch gap-4 whitespace-nowrap"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+          viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M6 13.5V3.75m0 9.75a1.5 1.5 0 010 3m0-3a1.5 1.5 0 000 3m0 3.75V16.5m12-3V3.75m0 9.75a1.5 1.5 0 010 3m0-3a1.5 1.5 0 000 3m0 3.75V16.5m-6-9V3.75m0 3.75a1.5 1.5 0 010 3m0-3a1.5 1.5 0 000 3m0 9.75V10.5" />
+        </svg>
+        Sed velit</button>
       </div>
       <div>
-        <img class="flex h-556 flex-col items-start gap-2.5" src="images/Col (1).png">
+        <img class="flex h-259 md:h-556" src="images/Col (1).png">
       </div>
     </div>
   </section>
-  <section class="w-full h-717 bg-amber-900 flex flex-col justify-center items-center gap-20 p-20 self-stretch">
-    <img src="images/Group 49.png">
+  
+  <section class="w-full h-auto md:h-717 bg-amber-900 flex flex-col justify-center items-center gap-20 p-20 self-stretch">
+    <img class="w-full h-auto" src="images/Group 49.png">
   </section>
-  <footer class=" justify-center items-center w-full px-20 py-0 flex-col  bg-gray-900 ">
-   <div class="grid grid-cols-6 grid-rows4 gap-6">
-    <div class="w-72 flex flex-col items-start text-gray-200 gap-4 p-20">
-      <a class="text-white" href="#">Product</a>
-      <a href="#">Pricing</a>
-      <a href="#">Overview</a>
-      <a href="#">Browse</a>
-      <a href="#">Accessibility</a>
-      <a href="#">Five</a>
-    </div>
-    <div class="w-72  flex flex-col items-start text-gray-200 gap-4 p-20">
-      <a class="text-white" href="#">Solutions</a>
-      <a href="#">Brainstorming</a>
-      <a href="#">Ideation</a>
-      <a href="#">Wireframing</a>
-      <a href="#">Research</a>
-      <a href="#">Design</a>
-    </div>
-    <div class="w-72  flex flex-col items-start  text-gray-200 gap-4 p-20">
-      <a class="text-white" href="#">Support</a>
-      <a href="#">Contact Us</a>
-      <a href="#">Developers</a>
-      <a href="#">Documentation</a>
-      <a href="#">Integrations</a>
-      <a href="#">Reports</a>
-    </div>
-    <div class="w-72 flex flex-col items-start  text-gray-200 gap-4 p-20">
-      <a class="text-white" href="#">Get the App</a>
-      <button><img src="images/App Store - Filled.png"></button>
-      <button><img src="images/Subject.png"></button>
-      <a class="flex items-center gap-2 self-stretch pt-12 pb-3" href="#">Follow Us</a>
-      <div class="flex items-center gap-4 self-stretch">
-      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <path d="M17.812 5.01699H6.145C3.855 5.01699 2 6.85199 2 9.11599V14.884C2 17.148 3.856 18.984 6.145 18.984H17.812C20.102 18.984 21.957 17.148 21.957 14.884V9.11599C21.957 6.85199 20.101 5.01599 17.812 5.01599V5.01699ZM15.009 12.28L9.552 14.855C9.51872 14.871 9.48192 14.8784 9.44503 14.8763C9.40815 14.8743 9.37237 14.863 9.34103 14.8434C9.3097 14.8239 9.28382 14.7967 9.2658 14.7645C9.24779 14.7322 9.23822 14.6959 9.238 14.659V9.34999C9.23867 9.31286 9.24872 9.27651 9.26722 9.24432C9.28573 9.21212 9.31208 9.18513 9.34382 9.16587C9.37556 9.1466 9.41167 9.13568 9.44877 9.13413C9.48587 9.13258 9.52276 9.14044 9.556 9.15699L15.014 11.892C15.0504 11.9101 15.0809 11.9381 15.102 11.9728C15.1232 12.0075 15.1341 12.0474 15.1336 12.0881C15.1331 12.1287 15.1211 12.1683 15.0991 12.2025C15.077 12.2366 15.0458 12.2638 15.009 12.281V12.28Z" fill="#E2E8F0"/>
-      </svg></a>
-      <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <path d="M9.046 5.865V8.613H7.032V11.973H9.046V21.959H13.18V11.974H15.955C15.955 11.974 16.215 10.363 16.341 8.601H13.197V6.303C13.197 5.96 13.647 5.498 14.093 5.498H16.347V2H13.283C8.943 2 9.046 5.363 9.046 5.865Z" fill="#E2E8F0"/>
-      </svg></a>
-      <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M22 5.90701C21.2504 6.23439 20.4565 6.44905 19.644 6.54401C20.4968 6.04324 21.138 5.24912 21.448 4.31001C20.64 4.78034 19.7587 5.11161 18.841 5.29001C18.4545 4.88522 17.9897 4.5634 17.4748 4.34419C16.9598 4.12498 16.4056 4.01298 15.846 4.01501C13.58 4.01501 11.743 5.82501 11.743 8.05501C11.743 8.37101 11.779 8.68001 11.849 8.97501C10.2236 8.89771 8.63212 8.48242 7.17617 7.75565C5.72022 7.02888 4.43176 6.00659 3.393 4.75401C3.02883 5.36841 2.83742 6.06979 2.839 6.78401C2.8397 7.45198 3.00683 8.10924 3.32529 8.6964C3.64375 9.28357 4.1035 9.78212 4.663 10.147C4.01248 10.126 3.37602 9.95234 2.805 9.64001V9.69001C2.805 11.648 4.22 13.281 6.095 13.653C5.74261 13.7465 5.37958 13.7939 5.015 13.794C4.75 13.794 4.493 13.769 4.242 13.719C4.51008 14.5269 5.02311 15.2313 5.70982 15.7344C6.39653 16.2374 7.22284 16.5141 8.074 16.526C6.61407 17.6506 4.82182 18.2581 2.979 18.253C2.647 18.253 2.321 18.233 2 18.197C3.88125 19.3877 6.06259 20.0183 8.289 20.015C15.836 20.015 19.962 13.858 19.962 8.51901L19.948 7.99601C20.7529 7.42968 21.4481 6.72186 22 5.90701Z" fill="#E2E8F0"/>
-        </svg>
-        </a>
-        <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M16.017 2H7.947C6.37015 2.00185 4.85844 2.62914 3.74353 3.74424C2.62862 4.85933 2.00159 6.37115 2 7.948L2 16.018C2.00185 17.5948 2.62914 19.1066 3.74424 20.2215C4.85933 21.3364 6.37115 21.9634 7.948 21.965H16.018C17.5948 21.9631 19.1066 21.3359 20.2215 20.2208C21.3364 19.1057 21.9634 17.5938 21.965 16.017V7.947C21.9631 6.37015 21.3359 4.85844 20.2208 3.74353C19.1057 2.62862 17.5938 2.00159 16.017 2V2ZM19.957 16.017C19.957 16.5344 19.8551 17.0468 19.6571 17.5248C19.4591 18.0028 19.1689 18.4371 18.803 18.803C18.4371 19.1689 18.0028 19.4591 17.5248 19.6571C17.0468 19.8551 16.5344 19.957 16.017 19.957H7.947C6.90222 19.9567 5.90032 19.5415 5.16165 18.8026C4.42297 18.0638 4.008 17.0618 4.008 16.017V7.947C4.00827 6.90222 4.42349 5.90032 5.16235 5.16165C5.90122 4.42297 6.90322 4.008 7.948 4.008H16.018C17.0628 4.00827 18.0647 4.42349 18.8034 5.16235C19.542 5.90122 19.957 6.90322 19.957 7.948V16.018V16.017Z" fill="#E2E8F0"/>
-          <path d="M11.982 6.819C10.6134 6.82112 9.30154 7.36579 8.33391 8.33361C7.36627 9.30143 6.82186 10.6134 6.82001 11.982C6.82159 13.3509 7.36603 14.6633 8.33391 15.6314C9.30179 16.5995 10.6141 17.1441 11.983 17.146C13.3521 17.1444 14.6647 16.5998 15.6328 15.6317C16.6008 14.6637 17.1454 13.3511 17.147 11.982C17.1449 10.6131 16.5999 9.30088 15.6317 8.33319C14.6634 7.3655 13.3509 6.82132 11.982 6.82V6.819ZM11.982 15.138C11.1452 15.138 10.3428 14.8056 9.75109 14.2139C9.15941 13.6222 8.82701 12.8198 8.82701 11.983C8.82701 11.1462 9.15941 10.3438 9.75109 9.75208C10.3428 9.1604 11.1452 8.828 11.982 8.828C12.8188 8.828 13.6213 9.1604 14.2129 9.75208C14.8046 10.3438 15.137 11.1462 15.137 11.983C15.137 12.8198 14.8046 13.6222 14.2129 14.2139C13.6213 14.8056 12.8188 15.138 11.982 15.138Z" fill="#E2E8F0"/>
-          <path d="M17.156 8.095C17.8392 8.095 18.393 7.54118 18.393 6.858C18.393 6.17483 17.8392 5.621 17.156 5.621C16.4728 5.621 15.919 6.17483 15.919 6.858C15.919 7.54118 16.4728 8.095 17.156 8.095Z" fill="#E2E8F0"/>
-          </svg>
-          
-          </a>
-      <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M21.959 13.719V21.098H17.681V14.213C17.681 12.483 17.062 11.303 15.514 11.303C14.332 11.303 13.628 12.099 13.319 12.868C13.206 13.143 13.177 13.526 13.177 13.911V21.098H8.897C8.897 21.098 8.955 9.438 8.897 8.229H13.177V10.053L13.149 10.095H13.177V10.053C13.745 9.178 14.76 7.927 17.033 7.927C19.848 7.927 21.959 9.767 21.959 13.719ZM4.421 2.026C2.958 2.026 2 2.986 2 4.249C2 5.484 2.93 6.473 4.365 6.473H4.393C5.886 6.473 6.813 5.484 6.813 4.249C6.787 2.986 5.887 2.026 4.422 2.026H4.421ZM2.254 21.098H6.532V8.229H2.254V21.098Z" fill="#E2E8F0"/>
-        </svg>
-        </a>
+  
+  <footer class="justify-center items-center w-full px-4 py-0 flex-col bg-gray-900">
+    <div class="max-w-screen-lg mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 py-8">
+        <div class="flex flex-col items-center md:items-start text-gray-200 gap-4 p-4 md:p-6">
+          <a class="text-white" href="#">Product</a>
+          <a href="#">Pricing</a>
+          <a href="#">Overview</a>
+          <a href="#">Browse</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Five</a>
+        </div>
+        <div class="flex flex-col items-center md:items-start text-gray-200 gap-4 p-4 md:p-6">
+          <a class="text-white" href="#">Solutions</a>
+          <a href="#">Brainstorming</a>
+          <a href="#">Ideation</a>
+          <a href="#">Wireframing</a>
+          <a href="#">Research</a>
+          <a href="#">Design</a>
+        </div>
+        <div class="flex flex-col items-center md:items-start text-gray-200 gap-4 p-4 md:p-6">
+          <a class="text-white" href="#">Support</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Developers</a>
+          <a href="#">Documentation</a>
+          <a href="#">Integrations</a>
+          <a href="#">Reports</a>
+        </div>
+        <div class="flex flex-col items-center md:items-start text-gray-200 gap-4 p-4 md:p-6">
+          <a class="text-white" href="#">Get the App</a>
+          <div class="flex flex-col gap-2 items-center md:items-start">
+            <button><img src="images/App Store - Filled.png"></button>
+            <button><img class="w-40" src="images/Subject.png"></button>
+          </div>
+          <a class="flex items-center gap-2 pt-4 pb-3" href="#">Follow Us</a>
+          <div class="flex items-center gap-4">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <!-- Youtube icon SVG code -->
+                <path
+                d="M17.812 5.01699H6.145C3.855 5.01699 2 6.85199 2 9.11599V14.884C2 17.148 3.856 18.984 6.145 18.984H17.812C20.102 18.984 21.957 17.148 21.957 14.884V9.11599C21.957 6.85199 20.101 5.01599 17.812 5.01599V5.01699ZM15.009 12.28L9.552 14.855C9.51872 14.871 9.48192 14.8784 9.44503 14.8763C9.40815 14.8743 9.37237 14.863 9.34103 14.8434C9.3097 14.8239 9.28382 14.7967 9.2658 14.7645C9.24779 14.7322 9.23822 14.6959 9.238 14.659V9.34999C9.23867 9.31286 9.24872 9.27651 9.26722 9.24432C9.28573 9.21212 9.31208 9.18513 9.34382 9.16587C9.37556 9.1466 9.41167 9.13568 9.44877 9.13413C9.48587 9.13258 9.52276 9.14044 9.556 9.15699L15.014 11.892C15.0504 11.9101 15.0809 11.9381 15.102 11.9728C15.1232 12.0075 15.1341 12.0474 15.1336 12.0881C15.1331 12.1287 15.1211 12.1683 15.0991 12.2025C15.077 12.2366 15.0458 12.2638 15.009 12.281V12.28Z"
+                fill="#E2E8F0" />
+              </svg>
+            </a>
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <!-- Facebook icon SVG code -->
+                <path
+                d="M9.046 5.865V8.613H7.032V11.973H9.046V21.959H13.18V11.974H15.955C15.955 11.974 16.215 10.363 16.341 8.601H13.197V6.303C13.197 5.96 13.647 5.498 14.093 5.498H16.347V2H13.283C8.943 2 9.046 5.363 9.046 5.865Z"
+                fill="#E2E8F0" />
+              </svg>
+            </a>
+            <a href="#">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Twitter icon SVG code -->
+                <path
+                d="M22 5.90701C21.2504 6.23439 20.4565 6.44905 19.644 6.54401C20.4968 6.04324 21.138 5.24912 21.448 4.31001C20.64 4.78034 19.7587 5.11161 18.841 5.29001C18.4545 4.88522 17.9897 4.5634 17.4748 4.34419C16.9598 4.12498 16.4056 4.01298 15.846 4.01501C13.58 4.01501 11.743 5.82501 11.743 8.05501C11.743 8.37101 11.779 8.68001 11.849 8.97501C10.2236 8.89771 8.63212 8.48242 7.17617 7.75565C5.72022 7.02888 4.43176 6.00659 3.393 4.75401C3.02883 5.36841 2.83742 6.06979 2.839 6.78401C2.8397 7.45198 3.00683 8.10924 3.32529 8.6964C3.64375 9.28357 4.1035 9.78212 4.663 10.147C4.01248 10.126 3.37602 9.95234 2.805 9.64001V9.69001C2.805 11.648 4.22 13.281 6.095 13.653C5.74261 13.7465 5.37958 13.7939 5.015 13.794C4.75 13.794 4.493 13.769 4.242 13.719C4.51008 14.5269 5.02311 15.2313 5.70982 15.7344C6.39653 16.2374 7.22284 16.5141 8.074 16.526C6.61407 17.6506 4.82182 18.2581 2.979 18.253C2.647 18.253 2.321 18.233 2 18.197C3.88125 19.3877 6.06259 20.0183 8.289 20.015C15.836 20.015 19.962 13.858 19.962 8.51901L19.948 7.99601C20.7529 7.42968 21.4481 6.72186 22 5.90701Z"
+                fill="#E2E8F0" />
+              </svg>
+            </a>
+            <a href="#">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Instagram icon SVG code -->
+                <path
+                d="M16.017 2H7.947C6.37015 2.00185 4.85844 2.62914 3.74353 3.74424C2.62862 4.85933 2.00159 6.37115 2 7.948L2 16.018C2.00185 17.5948 2.62914 19.1066 3.74424 20.2215C4.85933 21.3364 6.37115 21.9634 7.948 21.965H16.018C17.5948 21.9631 19.1066 21.3359 20.2215 20.2208C21.3364 19.1057 21.9634 17.5938 21.965 16.017V7.947C21.9631 6.37015 21.3359 4.85844 20.2208 3.74353C19.1057 2.62862 17.5938 2.00159 16.017 2V2ZM19.957 16.017C19.957 16.5344 19.8551 17.0468 19.6571 17.5248C19.4591 18.0028 19.1689 18.4371 18.803 18.803C18.4371 19.1689 18.0028 19.4591 17.5248 19.6571C17.0468 19.8551 16.5344 19.957 16.017 19.957H7.947C6.90222 19.9567 5.90032 19.5415 5.16165 18.8026C4.42297 18.0638 4.008 17.0618 4.008 16.017V7.947C4.00827 6.90222 4.42349 5.90032 5.16235 5.16165C5.90122 4.42297 6.90322 4.008 7.948 4.008H16.018C17.0628 4.00827 18.0647 4.42349 18.8034 5.16235C19.542 5.90122 19.957 6.90322 19.957 7.948V16.018V16.017Z"
+                fill="#E2E8F0"/>
+                <path
+                d="M11.982 6.819C10.6134 6.82112 9.30154 7.36579 8.33391 8.33361C7.36627 9.30143 6.82186 10.6134 6.82001 11.982C6.82159 13.3509 7.36603 14.6633 8.33391 15.6314C9.30179 16.5995 10.6141 17.1441 11.983 17.146C13.3521 17.1444 14.6647 16.5998 15.6328 15.6317C16.6008 14.6637 17.1454 13.3511 17.147 11.982C17.1449 10.6131 16.5999 9.30088 15.6317 8.33319C14.6634 7.3655 13.3509 6.82132 11.982 6.82V6.819ZM11.982 15.138C11.1452 15.138 10.3428 14.8056 9.75109 14.2139C9.15941 13.6222 8.82701 12.8198 8.82701 11.983C8.82701 11.1462 9.15941 10.3438 9.75109 9.75208C10.3428 9.1604 11.1452 8.828 11.982 8.828C12.8188 8.828 13.6213 9.1604 14.2129 9.75208C14.8046 10.3438 15.137 11.1462 15.137 11.983C15.137 12.8198 14.8046 13.6222 14.2129 14.2139C13.6213 14.8056 12.8188 15.138 11.982 15.138Z"
+                fill="#E2E8F0" />
+              <path
+                d="M17.156 8.095C17.8392 8.095 18.393 7.54118 18.393 6.858C18.393 6.17483 17.8392 5.621 17.156 5.621C16.4728 5.621 15.919 6.17483 15.919 6.858C15.919 7.54118 16.4728 8.095 17.156 8.095Z"
+                fill="#E2E8F0" />
+              </svg>
+            </a>
+            <a href="#">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- LinkedIn icon SVG code -->
+                <path
+                d="M21.959 13.719V21.098H17.681V14.213C17.681 12.483 17.062 11.303 15.514 11.303C14.332 11.303 13.628 12.099 13.319 12.868C13.206 13.143 13.177 13.526 13.177 13.911V21.098H8.897C8.897 21.098 8.955 9.438 8.897 8.229H13.177V10.053L13.149 10.095H13.177V10.053C13.745 9.178 14.76 7.927 17.033 7.927C19.848 7.927 21.959 9.767 21.959 13.719ZM4.421 2.026C2.958 2.026 2 2.986 2 4.249C2 5.484 2.93 6.473 4.365 6.473H4.393C5.886 6.473 6.813 5.484 6.813 4.249C6.787 2.986 5.887 2.026 4.422 2.026H4.421ZM2.254 21.098H6.532V8.229H2.254V21.098Z"
+                fill="#E2E8F0" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col md:justify-between py-6 px-4 md:px-20">
+        <div>
+          <p class="text-white text-base font-normal not-italic">Collers @ 2023. All rights reserved.</p>
+        </div>
+        <div class="flex justify-end items-center gap-8">
+          <a href="#" class="text-white">Terms</a>
+          <a href="#" class="text-white">Privacy</a>
+          <a href="#" class="text-white">Contact</a>
+          <a href="#" class="text-white flex items-center gap-2"><svg
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+            </svg>
+            EN</a>
+        </div>
       </div>
     </div>
-   </div>
-    <div class="flex justify-between py-6">
-      <div>
-          <p class="text-white text-base font-normal not-italic">&copy; Collers @ 2023. All rights reserved.</p>
-      </div>
-      <div class="flex justify-end items-center gap-8 ">
-          <a href="#" class="text-white px-2">Terms</a>
-          <a href="#" class="text-white px-2">Privacy</a>
-          <a href="#" class="text-white px-2">Contact</a>
-          <a href="#" class="text-white px-2 flex justify-center items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
-          </svg>
-          EN</a>
-
-      </div>
-  </div>
-    
   </footer>
+  
 
+
+
+  
 
 
 

@@ -8,13 +8,20 @@ module.exports = {
       },
       width: {
         '486': '486px',
+        '361': '361px',
+        '271': '271px',
         '520': '520px',
         '1360': '1360px',
         '666.284px': '666.284px',
       },
       height: {
         '388': '388px',
+        '259': '259px',
+        '248': '248px',
+        '1643': '1643px',
+        '1228': '1228px',
         '421': '421px',
+        '464': '464px',
         '350': '350px',
         '556': '556px',
         '717': '717px',
@@ -33,7 +40,7 @@ module.exports = {
         
     },
     backgroundImage: {
-      'back-pattern': "url('src/images/Group 50.png')",
+      'back-pattern': "url('src/images/Backlights.png')",
       'footer-texture': "url('/img/footer-texture.png')",
     }
   },
